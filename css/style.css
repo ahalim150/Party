@@ -1,0 +1,94 @@
+#home
+{
+    background-image: url(../imgs/Home.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    color: white;
+}
+.homeLayer
+{
+    background-color: rgba(214, 46, 51 , 0.6);
+}
+
+#sideBar
+{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+}
+
+#sideBar a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#sideBar a:hover{
+    color: rgba(214, 46, 51 , 0.6) !important;
+}
+
+.accordion-button{
+    background-color: rgba(214, 46, 51 , 0.6) !important;
+    color: white !important;
+}
+
+#panelsStayOpen-collapseOne, #panelsStayOpen-collapseTwo, #panelsStayOpen-collapseThree, #panelsStayOpen-collapseFour{
+    background-color: #ccc;
+}
+
+#count{
+    background-image: url(../imgs/Window.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.countLayer{
+    background-color: rgba(214, 46, 51 , 0.6);
+}
+
+.sq
+{
+    padding: 50px;
+    border: 1px solid #FFF;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#contact form input,
+#contact form textarea{
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+#contact form textarea{
+    height: 200px;
+    resize:vertical;
+}
+
+#contact form button{
+    background-color: #D62E33;
+    color:#fff;
+    padding:10px 20px;
+    border-radius: 0;
+    text-transform: uppercase
+}
+
+.test
+{
+    font-size: 20px;
+    color: #D62E33;
+}
+
