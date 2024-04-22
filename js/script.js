@@ -1,3 +1,11 @@
+$(window).on("load", () => {
+  setTimeout(()=>{
+    $(".loading-screen").fadeOut(500, ()=>{
+        $("body").css("overflow", "visible")
+    })
+  },500)
+})
+
 $(".sideBarBtn").click(function(){
     $("#sideBar").animate({ width:'15%'},500)
     $("#homeContent").animate({paddingLeft :'15%'},500)
@@ -41,8 +49,7 @@ function countDate(dateApply) {
     countDate(dateApply);}, 1000);
 }
 
-
-$('textarea').keyup(function() {
+$('textarea').keydown(function() {
   var maxchar = 100;
   var length = $(this).val().length;
   var charLeft = (maxchar - length);
@@ -55,9 +62,7 @@ $('textarea').keyup(function() {
     $(".testo").text(" Character Remaining");
   }
 });
-
 /****************************************/
-
 let menuToggle = document.querySelector('.menuToggle');
 let menu = document.querySelector('.menu');
 menuToggle.onclick = function(){
