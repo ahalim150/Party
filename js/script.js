@@ -68,3 +68,9 @@ let menu = document.querySelector('.menu');
 menuToggle.onclick = function(){
     menu.classList.toggle('active');
 }
+
+$(".menu li").click((e) => {
+  let selectedColor = $(e.target).css("--clr");
+
+  $(".selectedColor").css("color", selectedColor)
+})
