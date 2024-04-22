@@ -1,3 +1,6 @@
+body{
+    overflow: hidden;
+}
 #home
 {
     background-image: url(../imgs/Home.jpg);
@@ -10,7 +13,13 @@
 {
     background-color: rgba(214, 46, 51 , 0.6);
 }
-
+.loading-screen{
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    background-color: black;
+}
 #sideBar
 {
     height: 100%;
@@ -24,7 +33,6 @@
     transition: 0.5s;
     padding-top: 90px;
 }
-
 #sideBar a{
     text-decoration: none;
     color: white;
@@ -35,31 +43,25 @@
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
-
 #sideBar a:hover{
     color: rgba(214, 46, 51 , 0.6) !important;
 }
-
 .accordion-button{
     background-color: rgba(214, 46, 51 , 0.6) !important;
     color: white !important;
 }
-
 #panelsStayOpen-collapseOne, #panelsStayOpen-collapseTwo, #panelsStayOpen-collapseThree, #panelsStayOpen-collapseFour{
     background-color: #ccc;
 }
-
 #count{
     background-image: url(../imgs/Window.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
 }
-
 .countLayer{
     background-color: rgba(214, 46, 51 , 0.6);
 }
-
 .sq
 {
     padding: 50px;
@@ -67,7 +69,6 @@
     font-weight: 500;
     font-size: 30px;
 }
-
 #contact form input,
 #contact form textarea{
     margin-bottom: 20px;
@@ -77,7 +78,6 @@
     height: 200px;
     resize:vertical;
 }
-
 #contact form button{
     background-color: #D62E33;
     color:#fff;
@@ -85,15 +85,12 @@
     border-radius: 0;
     text-transform: uppercase
 }
-
 .test
 {
     font-size: 20px;
     color: #D62E33;
 }
-
 /******************************/
-
 .menu{
     position: relative;
     width: 260px;
@@ -159,7 +156,6 @@
     0 0 30px var(--clr),
     0 0 50px var(--clr);
 }
-
 .menu li a::after{
     content: '';
     position: absolute;
